@@ -1,0 +1,23 @@
+<ion-view title="登录" view-title="登录">
+  <ion-content class="padding">
+    <div class="list">
+      <h2>YP任务管理平台</h2>
+      <label class="item item-input">
+        <span class="input-label">用户名</span>
+        <input type="text" ng-model="user.username">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">密  码</span>
+        <input type="password" ng-model="user.password">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="signIn(user)">
+        立即登录
+      </button>
+      <!--<p class="text-center">
+        <a href="#/forgot-password">找回密码</a>
+      </p>-->
+    </div>
+  </ion-content>
+</ion-view>

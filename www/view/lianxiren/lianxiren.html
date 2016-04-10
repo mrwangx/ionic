@@ -1,0 +1,16 @@
+<ion-view view-title="联系人列表">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="lxr in lxrList" type="item-text-wrap" >
+        <!-- <img ng-src="{{chat.face}}">-->
+        <h2>{{lxr.name}}</h2>
+        <p>{{lxr.phone}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(lxr)">
+          删除
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
